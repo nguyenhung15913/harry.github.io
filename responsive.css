@@ -1,0 +1,230 @@
+@media (max-width: 812px) 
+{
+    header .shopping-cart {
+        position: fixed;
+        margin-top: -38px;
+        color: white;
+        width: 70px;
+        background-color: blue;
+        padding: 3px;
+        float: right;
+        margin-left: 290px;
+    }
+
+    /* section */
+
+    section {
+        display: block;
+    }
+
+    section #home {
+        width: 100%;
+    }
+
+    /* Product */
+
+    section #product-main {
+        width: 100%;
+    }
+
+    section #product-main .product-line .product {
+        width: 41%;
+    }
+
+    /* Cart */
+    section #cart {
+        width: 100%;
+    }
+
+    .productInCart {
+        width: 374px;
+    }
+
+    .price {
+        width: 15%;
+        margin-left: 68px;
+    }
+
+    .quantity {
+        margin-left: 0;
+    }
+
+    #checkOut { 
+        display: block;
+    }
+
+    section #checkOut #billing {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section #checkOut #billing input{
+        width: 60%;
+    }
+
+    section #checkOut #payment {
+        width: 99%;
+        padding: 0;
+    }
+
+    .cart-info {
+        padding: 8px;
+    }
+
+    /* help */
+
+    section #help {
+        width: 100%;
+        margin: 0;
+    }
+
+    section #help .help-1 {
+        display: grid;
+    }
+
+    section #help .help-1 .helpOption {
+        margin-bottom: 10px;
+    }
+
+    section #help .help-1 .helpOption {
+        width: 80%;
+    }
+
+    section #help #more-solution {
+        margin: 10px 0 10px 5px;
+    }
+
+    section #help #more-solution #solution-search input {
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    /* About */
+
+    section #about {
+        width: 100%;
+    }
+
+    section #about #about-us 
+    {
+        margin: 0 5px;
+    }
+
+    /* Contact */
+    section #contact {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #contact-img {
+        float: none;
+        width: 99%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    section #contact input {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .goHome a {
+        font-size: 19pt;
+    }
+    /* Menu */
+
+    .menu-toggle {
+        display: block;
+        margin-top: -125px;
+        
+    }
+
+    #navi {
+       display: none; 
+       position: fixed;
+       width: 38%;
+       background-color: ivory;
+       margin-top: -95px;
+    }
+
+    /* Logo and name store */
+
+    #name-store {
+        width: 100%;
+        height: 157px;
+        margin-top: -25px;
+    }
+
+    #logo-store {
+        height: 83px;
+    }
+
+    
+
+    /* Promotion */
+
+    #home h3 {
+        font-size: 30pt;
+        margin-left: 0;
+        margin-top: 20px;
+        color: red;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .summer-sale 
+    {
+        text-align: center;
+    }
+
+    .summer-sale .product-sale {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* poster */
+
+    section #poster {
+        width: auto;
+        float: none;
+        margin: 0;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 20px 0px 431px 2px;
+    }
+
+    .footer-1 {
+        float: left;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    }
+
+    .footer-1 ul {
+        display: none;
+    }
+
+    #footer-icon {
+        float: right;
+    }
+
+    footer form {
+        color: white;
+        margin: 10px 0 0 30px;
+    }
+        
+
+    /* copy right */
+    #copyright {
+        background-color: black;
+    height: 50px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 13pt;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="contactscript.js"></script>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/logo.png" alt="logo" id="logo-store" />
+        <img src="images/name-store.png" alt="name-store" id="name-store" />
+      </div>
+      <span class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><ion-icon name="search-outline"></ion-icon></button>
+      </span>
+
+      
+    </header>
+
+    <section>
+      <!-- Contact -->
+      <div class="container">
+        <div id="contact">
+          <h2><b>Contact Us</b></h2>
+          <br />
+          <p>Address: 110 Front Street, North York, Ontario</p>
+          <p>Postal Code: M2H 2P8</p>
+          <p>Phone: 416-824-2012</p>
+          <br />
+          <h2><b>Or leave your information below</b></h2>
+          <br>
+          <form action="https://httpbin.org/post" method="POST">
+            <label>
+              First Name:
+              <p>
+                <input type="text" name="fname" required />
+              </p>
+            </label>
+  
+            <label>
+              Last Name:
+              <p>
+                <input type="text" name="lname" required />
+              </p>
+            </label>
+  
+            <label>
+              Email:
+              <p>
+                <input type="email" name="email" placeholder="abc123@gmail.com"/>
+              </p>
+            </label>
+  
+            <label>
+             Address:
+              <p>
+                <input type="text" name="address"  />
+              </p>
+            </label>
+  
+            <label>
+              City:
+              <p> 
+                <input type="text" list="subjects1" name="city" />
+                <datalist id="subjects1">
+                  <option value="Ontario"> </option>
+                  <option value="Alberta"> </option>
+                  <option value="Quebec"> </option>
+                  <option value="others"> </option>
+                </datalist>
+              </p>
+            </label>
+  
+            <label>
+              Postal Code:
+               <p>
+                 <input type="text" name="postal"  pattern="^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] ?\d[A-Z]\d)$" placeholder="Ex: M2H 3G7"/>
+               </p>
+             </label>
+  
+             <!-- Radio option here -->
+            
+            <label>
+              Message:
+              <p>
+                <textarea name="message" placeholder="Give us feedback if you need..."></textarea>
+              </p>
+            </label>
+  
+            <input type="hidden" value="Hung Nguyen" /> <br>
+  
+           
+
+              <h2>This is about:</h2> 
+             
+                <input type="radio" id="question" name="problem" class="problem"> 
+                <label for="question" class="problem" >Question </label><br>
+  
+                <input type="radio" id="comment" name="problem" class="problem">  
+                <label for="comment" class="problem">Comment</label><br>
+
+                <input type="radio" id="orderproblem" name="problem" class="problem"> 
+                <label for="orderproblem" class="problem">Order Problem </label><br>
+
+                <div class="orno" >
+                  Order Number: <br>
+                  <input type="text" name="orderno" >
+                </div>
+                
+
+                <input type="submit" value="send" class="send-button"/>
+          </form>
+        </div>
+
+        
+
+        <div id="contact-img">
+          <img src="images/burst-kUqqaRjJuw0-unsplash.jpg" alt="contact" />
+          <div class="map">
+            <h2>Map</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
+            ></iframe>
+          </div>
+
+          <div class="goHome"><a href="index.html">Go back to home page</a></div>
+        </div>
+
+        
+
+      </div>
+      
+    </section>
+
+    <footer>
+      <div class="footer-1">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-1">
+        <h3>More Way To Shop</h3>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-1">
+        <h3>Our Service</h3>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-1">
+        <h3>Corporate Info</h3>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+
+      <div id="footer-icon">
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+
+      <form action="https://formspree.io/mrgydlqd" method="POST">
+        <label>
+          Your Name:
+          <p>
+            <input type="text" name="name" required />
+          </p>    
+        </label>
+        
+        <label>
+          Email:
+          <p>
+            <input type="email" name="email" />
+          </p>
+        </label>
+
+        <label>
+          <p> 
+            <input type="submit" value="subscribe" class="subscribe" />
+          </p> 
+        </label>  
+            
+      </form>
+    </footer>
+
+    <div id="copyright">
+      <p>&copy; <i>2020, Squidy Speedy Allright Reserved.</i></p>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
+</html>

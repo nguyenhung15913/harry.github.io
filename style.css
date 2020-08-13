@@ -1,0 +1,669 @@
+/* Add any CSS you need to this file. */
+@font-face {
+  font-family: 'MeriendaOne';
+  src: url(/MeriendaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Siracha';
+  src: url(Sriracha-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Pacifio';
+  src: url(Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Chilanka';
+  src: url(Chilanka-Regular.ttf);
+}
+
+/* Container */
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+/*Header*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url(images/header_background.jpg);
+  background-repeat: round;
+  height: 8em;
+}
+
+header #logo {
+  display: flex;
+  width: 200px;
+  height: 100px;
+}
+
+#logo-store {
+  height: 120px;
+}
+
+#name-store {
+  width: 100%;
+  height: 200px;
+  margin-top: -5px;
+}
+
+header span.search-bar {
+  float: right;
+  background-color: white;
+  border-radius: 2em;
+  margin-left: 10px;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  padding-right: 20px;
+  margin-top: -10px;
+}
+
+header span button {
+  background-color: white;
+  border: none;
+}
+
+header span button:hover {
+  cursor: pointer;
+}
+
+header span input {
+  margin-right: 2em;
+  height: 2em;
+  width: 20em;
+  border: none;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  font-size: small;
+  padding-left: 1em;
+}
+
+header .shopping-cart {
+  margin-top: -10px;
+  color: white;
+  width: 70px;
+  background-color: blue;
+  padding: 3px;
+  float: right;
+}
+
+header .shopping-cart:hover {
+  cursor: pointer;
+}
+
+header .shopping-cart span {
+  margin-left: 5px;
+}
+
+section {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* Menu */
+
+section iframe {
+  width: 60%;
+  height: 200px;
+  border: none;
+}
+
+.menu-toggle {
+  font-size: 30px;
+  display: none;
+  position: fixed;
+}
+
+section nav {
+  width: 10%;
+  border-right-width: 10px;
+  border-right-style: groove;
+  border-bottom-style: groove;
+  border-top-style: groove;
+  border-bottom-width: 10px;
+  border-top-width: 10px;
+  margin-right: 10px;
+}
+
+section nav ul {
+  margin: 2em 0;
+}
+
+section nav ul li {
+  display: block;
+  padding: 1em 0 1em 1em;
+}
+
+section nav ul li a {
+  font-family: 'Siracha';
+  text-decoration: none;
+  color: black;
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
+section nav ul li a:hover {
+  text-decoration: underline;
+  color: red;
+  font-size: 20pt;
+  font-weight: bolder;
+  margin-left: 1em;
+}
+
+/* Home */
+section #home {
+  display: none;
+  width: 70%;
+}
+section #home img {
+  width: 100%;
+  height: 400px;
+}
+
+.summer-sale {
+  margin-top: 50px;
+}
+
+.summer-sale .product-sale {
+  background-image: url(images/cardBack.png);
+}
+
+section #home .summer-sale img {
+  width: 150px;
+  height: 100px;
+}
+
+#content {
+  margin-top: 50px;
+}
+
+#content .content-1 a {
+  text-decoration: none;
+}
+
+#home h2 {
+  font-family: 'Chilanka';
+  font-size: 30pt;
+  color: #f55d98;
+}
+
+#home h3 {
+  font-size: 30pt;
+  margin-left: 200px;
+  margin-top: 20px;
+  color: red;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Product */
+
+section #product-main {
+  margin-left: 10px;
+  width: 70%;
+  display: none;
+}
+
+.men {
+  display: none;
+}
+
+.women {
+  display: none;
+}
+
+.kid {
+  display: none;
+}
+
+section #product-main #category {
+  margin-top: 10px;
+}
+
+section #product-main #category .name-region {
+  display: inline-block;
+  font-size: 18pt;
+}
+
+section #product-main #category .name-region:hover {
+  color: red;
+  cursor: pointer;
+}
+
+section #product-main .product-line {
+  margin-top: 10px;
+  height: 18em;
+}
+
+section #product-main .product-line .product {
+  font-family: 'Pacifio';
+  float: left;
+  border: 1px solid black;
+  padding-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  width: 20%;
+  text-align: center;
+  background-image: url(images/cardBack.png);
+  color: white;
+}
+
+section #product-main .product-line .product img {
+  width: 100%;
+}
+
+section #product-main .product-line .addCart img {
+  margin-top: -20px;
+  width: 100%;
+}
+
+section #product-main .product-line .addCart:hover img {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Cart */
+
+#no-items {
+  display: none;
+  font-family: 'Chilanka';
+  width: 70%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.products-container {
+  max-width: 600px;
+  justify-content: space-around;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  display: none;
+}
+
+.product-header {
+  font-size: 15pt;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.total {
+  width: 10%;
+  align-items: center;
+  margin-left: 18px;
+}
+
+.quantity {
+  width: 15%;
+  align-items: center;
+  margin-left: 18px;
+}
+
+.products {
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.productInCart {
+  width: 600px;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.products img {
+  height: 100px;
+}
+
+section #cart {
+  width: 70%;
+  display: none;
+}
+
+#cart-1 {
+  display: none;
+}
+
+#checkOut {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+section #checkOut #billing {
+  width: 30%;
+}
+
+section #checkOut #payment {
+  width: 60%;
+  border: 1px solid black;
+  height: 200px;
+  padding: 10px;
+}
+
+section #checkOut #payment img {
+  width: 45%;
+  float: left;
+}
+
+.card-info {
+  width: 50%;
+  float: left;
+}
+
+#clear-cart {
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  background-color: darkblue;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#clear-cart a {
+  text-decoration: none;
+  color: white;
+}
+
+#clear-cart:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+#buy {
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  background-color: darkblue;
+
+  margin: 20px auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#buy a {
+  text-decoration: none;
+  color: white;
+}
+
+#buy:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+/* Contact */
+section #contact {
+  /* display: none; */
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+}
+
+section #contact input {
+  width: 60%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 25px;
+}
+
+section #contact textarea {
+  width: 60%;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.send-button {
+  width: 20% !important;
+  height: 40px !important ;
+  background-color: red !important;
+  color: white !important;
+  font-weight: bolder;
+  margin-top: 20px !important;
+}
+
+
+#contact-img {
+  width: 55%;
+  float: right;
+}
+
+#contact-img img {
+  width: 100%;
+  
+}
+
+#contact h2 {
+  font-family: 'Chilanka';
+  color: #f55d98;
+}
+
+#contact p {
+  font-size: 15pt;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+.goHome {
+  margin-top: 20px;
+}
+
+.problem {
+  font-size: 20px !important;
+  width: 3% !important;
+  margin: 0 !important;
+  height: 13px !important;
+}
+
+.goHome a {
+  text-decoration: none;
+  font-family: 'Pacifio';
+  font-size: 20pt;
+  text-transform: uppercase;
+  color: red;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.goHome a:hover {
+  color: white;
+}
+
+/* Help */
+
+section #help {
+  display: none;
+  margin: 50px;
+  width: 70%;
+}
+
+section #help .help-1 {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+section #help .help-1 .helpOption {
+  width: 45%;
+  display: flex;
+  border: 1px solid black;
+  height: 100px;
+  margin-right: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+section #help .help-1 .helpOption:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+section #help .help-1 .helpOption:hover .option-content h3 {
+  color: red;
+}
+
+section #help .help-1 .helpOption .help-img {
+  width: 20%;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+section #help .help-1 .helpOption .help-img img {
+  height: 50px;
+  width: 50px;
+}
+
+section #help .help-1 .helpOption .option-content {
+  width: 80%;
+  margin-top: 20px;
+}
+
+section #help #more-solution {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+section #help #more-solution #solution-search input {
+  height: 20px;
+  width: 400px;
+}
+
+/* About */
+section #about {
+  width: 70%;
+  display: none;
+}
+
+section #about h1 {
+  margin-top: 20px;
+  font-size: 20pt;
+  font-family: 'Chilanka';
+}
+
+section #about img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#about #about-us h2 {
+  margin-top: 30px;
+  color: #323ea8;
+  font-family: 'MeriendaOne';
+}
+
+#about #about-us p {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Poster */
+
+section #poster {
+  margin-left: 10px;
+  width: 20%;
+  float: right;
+}
+
+section #poster img {
+  width: 100%;
+  height: 500px;
+}
+
+footer {
+  background-color: gray;
+  background-image: url(images/footer-background.jpg);
+  padding: 50px 0px 325px 220px;
+}
+
+footer .footer-1 {
+  float: left;
+  margin-right: 100px;
+}
+
+footer .footer-1 h3 {
+  font-size: 20pt;
+  color: white;
+}
+
+footer .footer-1 ul {
+  margin-left: 15px;
+  list-style-type: none;
+  color: white;
+  margin-top: 20px;
+}
+
+footer .footer-1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-1 ul li {
+  margin-top: 15px;
+}
+
+footer .footer-1 ul li a:hover {
+  color: green;
+}
+
+footer #footer-icon a {
+  color: white;
+  font-size: 20pt;
+  margin-right: 5px;
+  float: left;
+}
+
+footer #footer-icon a:hover {
+  color: green;
+}
+
+footer form {
+  color: white;
+  float: left;
+}
+
+footer input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.subscribe {
+  float: left;
+  width: 80% !important;
+  height: 40px !important ;
+  background-color: red !important;
+  color: white !important;
+  font-weight: bolder;
+}
+
+#copyright {
+  background-color: black;
+  height: 50px;
+  color: white;
+  padding-top: 15px;
+  padding-left: 180px;
+  font-size: 13pt;
+}
